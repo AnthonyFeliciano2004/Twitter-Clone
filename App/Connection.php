@@ -13,7 +13,11 @@ class Connection {
             return $conn;
         } catch (\PDOException $e) {
             // Trate o erro de alguma forma adequada, como registrar em um arquivo de log ou exibir uma mensagem de erro
+<<<<<<< HEAD
             echo  $e->getMessage();
+=======
+            echo 'Erro na conexão com o banco de dados : ' . $e->getMessage();
+>>>>>>> 3998036b707e5c50df83351f8fe90a1d3f7b5d1b
             //exit(); // Você pode escolher como lidar com o erro, encerrar a execução ou retornar um valor adequado dependendo do contexto
         }
     }
